@@ -1,5 +1,3 @@
-Here is your content rewritten cleanly in **README.md format**:
-
 ---
 
 # **FCM Manager**
