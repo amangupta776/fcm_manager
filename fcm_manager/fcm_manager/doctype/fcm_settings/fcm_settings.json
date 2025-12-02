@@ -1,0 +1,72 @@
+{
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "service_account_json",
+  "sb_filter",
+  "allowed_doctypes",
+  "sb_test",
+  "test_device_token",
+  "test_title",
+  "test_body",
+  "send_test_notification"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enable FCM"
+  },
+  {
+   "description": "Upload the service-account.json file here (Mark as Private)",
+   "fieldname": "service_account_json",
+   "fieldtype": "Attach",
+   "label": "Service Account JSON"
+  },
+  {
+   "fieldname": "sb_filter",
+   "fieldtype": "Section Break",
+   "label": "Filter Configuration",
+   "description": "If this table is empty, ALL notifications are sent. If rows exist, ONLY these DocTypes will trigger push."
+  },
+  {
+   "fieldname": "allowed_doctypes",
+   "fieldtype": "Table",
+   "label": "Allowed DocTypes",
+   "options": "FCM Whitelisted Doctype"
+  },
+  {
+   "fieldname": "sb_test",
+   "fieldtype": "Section Break",
+   "label": "Test Console"
+  },
+  {
+   "fieldname": "test_device_token",
+   "fieldtype": "Data",
+   "label": "Test Device Token"
+  },
+  {
+   "default": "Test",
+   "fieldname": "test_title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "default": "This is a test message",
+   "fieldname": "test_body",
+   "fieldtype": "Data",
+   "label": "Body"
+  },
+  {
+   "fieldname": "send_test_notification",
+   "fieldtype": "Button",
+   "label": "Send Test"
+  }
+ ],
+ "issingle": 1,
+ "module": "FCM Manager",
+ "name": "FCM Settings",
+ "permissions": [{"create":1,"read":1,"write":1,"role":"System Manager"}]
+}
