@@ -8,6 +8,12 @@ Google deprecated the legacy FCM APIs in **June 2024**.
 This app provides a seamless migration path by handling **OAuth 2.0 authentication via Service Accounts** and offering a **drop-in replacement** for push notification handling using the modern **Firebase HTTP v1 API**.
 
 ---
+### Version
+1.0.1
+
+### Changelog / Updates
+# v1.0.1
+- fix: rename `api` folder to `whitelist_api` to prevent import conflicts
 
 ## 🚀 Features
 
@@ -83,7 +89,7 @@ Your mobile application (Flutter / React Native / Native iOS / Native Android) m
 ### **Endpoint**
 
 ```
-POST /api/method/fcm_manager.fcm_manager.api.register_device_token
+POST /api/method/fcm_manager.whitelist_api.v1.register_device_token.register_device_token
 ```
 
 ### **Payload**
