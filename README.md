@@ -83,7 +83,7 @@ Your mobile application (Flutter / React Native / Native iOS / Native Android) m
 ### **Endpoint**
 
 ```
-POST /api/method/fcm_manager.fcm_manager.api_public.register_device_token
+POST /api/method/fcm_manager.fcm_manager.api.register_device_token
 ```
 
 ### **Payload**
