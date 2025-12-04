@@ -155,4 +155,3 @@ GitHub Actions workflows included:
 
 ---
 
-If you'd like, I can also format this as a **Frappe Marketplace-ready README** or add **badges** (build, license, version).
